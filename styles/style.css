@@ -1,0 +1,277 @@
+:root {
+    /* Font*/
+    font-size: 20px;
+
+    /* Margin */
+    --margin-xxs: 0.25rem;
+    --margin-xs: 0.5rem;
+    --margin-s: 0.75rem;
+    --margin-m: 1rem;       
+    --margin-l: 1.25rem;
+    --margin-xl: 1.75rem;
+    --margin-xxl: 2.5rem;
+
+    /* Colors */
+    --gray5:  hsl(0, 0%, 5%);
+    --gray10: hsl(0, 0%, 10%);
+    --gray30: hsl(0, 0%, 30%);
+    --gray50: hsl(0, 0%, 50%);
+    --gray70: hsl(0, 0%, 70%);
+    --gray90: hsl(0, 0%, 90%);
+    --gray95: hsl(0, 0%, 95%);
+    --white:  hsl(0, 0%, 100%);
+
+    /* Back ground and text*/
+
+    --bg-dark: var(--gray90);
+    --bg: var(--gray95);
+    --bg-light: var(--white);
+    --text: var(--gray5);
+    --text-muted: var(--gray30);
+
+
+    /* Gradient & UI */
+    --gradient: linear-gradient(0deg, var(--gray90), var(--white));
+    --gradient-hover: linear-gradient(0deg, var(--gray70), var(--gray90));
+    --highlight: var(--white);       
+    --border-card: 1px solid var(--gray30);
+
+    /* Shadow */
+    --shadow: 
+    0 2px 2px rgba(0, 0, 0, 0.07),
+    0 4px 4px rgba(0, 0, 0, 0.15);
+    --border-card: solid 1px var(--bg);
+
+    --colora: #F15025;
+    --colorb: #25C6F1;
+
+    /* Font family */
+    --ff: "Inter", sans-serif;
+
+    /* Radius */
+    --radius: 20px;
+
+
+}
+
+
+body{
+    background-color: var(--bg-dark); 
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.wrapper-header{
+    position: sticky;
+    top: 0px;
+    padding-top: 8px;
+    margin-left: -2px;
+    margin-right: -2px;
+    border-bottom-right-radius: var(--radius);
+    border-bottom-left-radius: var(--radius);
+    background-color: var(--bg-dark);
+}
+
+.header{
+    padding: 10px;
+    background-image: url(/images/background.jpg);
+    border-radius: var(--radius);
+    box-shadow: inset 0 1px 0 0 var(--highlight), var(--shadow);
+    border: var(--border-card);
+    background-position-x: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.scrole{
+    height: 300px;
+    margin-top: var(--margin-xl);
+    background-color: var(--bg);
+    border-radius: var(--radius);
+    box-shadow: inset 0 1px 0 0 var(--highlight), var(--shadow);
+    border: var(--border-card);
+}
+
+
+.logo{
+    height: 5rem;
+    margin-left: var(--margin-s);
+}
+
+.login{
+    margin-right: var(--margin-s);
+    border-radius: var(--radius);
+    box-shadow: inset 0 2px 0 0 var(--highlight), var(--shadow);
+    width: 6rem;
+    color: var(--text);
+    border: var(--border-card);  
+    background-color: rgba(230, 230, 230, 0.3); 
+}
+
+.login:hover{
+    transform: scale(1.02);
+    background-color: rgba(209, 209, 209, 0.3);
+}
+
+.login-input{
+    display: none;
+}
+
+.login-label{ 
+    text-align: center;
+    margin: 0;
+    font-size: xx-large;
+    padding:5px;
+}
+
+.formulary{
+    position: absolute;
+    border: 1px solid black;
+    width: 10em;
+    height: 200px;
+    top: 7em;
+    right: 1.8em;
+
+}
+
+.midle {
+    display: flex;
+    min-height: vh;
+}
+
+
+aside {
+    flex: 0 0 9rem; 
+    display: flex;
+    flex-direction: column;
+    gap: var(--margin-s);
+    margin-top: var(--margin-l);
+    margin-right: var(--margin-s);
+}
+
+nav{
+    border-radius: var(--radius);
+    box-shadow: inset 0 1px 0 0 var(--highlight), var(--shadow);
+    background-color: var(--bg);
+    color: var(--text);
+    border: var(--border-card);    
+}
+
+.aside-title{
+    text-align: center;
+}
+
+ul{
+    list-style: none;
+    padding-left: 0;
+}
+
+a{
+    text-decoration: none;  
+    color: var(--text-muted);  
+}
+
+.aside-link{
+    color: var(--text-muted);
+    padding: 0.6rem;
+    margin: var(--margin-m);
+    border-radius: 10px;
+    box-shadow: inset 0 1px 0 0 var(--highlight), var(--shadow);
+    background-color: var(--bg-light);
+    color: var(--text);
+    border: var(--border-card);
+    text-align: center;
+}
+
+.aside-link:hover{
+    background-color: var(--bg);
+}
+
+main {
+    
+    flex: 1; 
+    padding: var(--margin-m);
+    border-radius: var(--radius);
+    box-shadow: inset 0 1px 0 0 var(--highlight), var(--shadow);
+    background-color: var(--bg);
+    color: var(--text);
+    border: var(--border-card);  
+    margin-top: var(--margin-l);
+    color: var(--text); 
+}
+
+.main-description{
+    color: var(--text-muted);
+}
+
+
+footer {
+    padding-left: 100px;
+    padding-right: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.footer-hr{
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-top: var(--margin-xxl);
+}
+
+.copyright::after{
+     content: " de la Torre Jiménez";
+    
+}
+
+@media (max-width: 900px) {
+    footer{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .footer-hr{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .copyright::after{
+     content: "";
+    }
+
+    .title{
+        display: none;
+    }
+
+}
+
+.copyright{
+    font-size: small;
+    color: var(--text-muted);
+
+}
+ 
+
+
+.footer-links > li {
+    display: inline-block;
+    color: var(--text);
+    font-size: medium;
+}
+
+.footer-links > li > a:hover {
+    text-decoration: underline;
+}
+
+.footer-links > li:not(:first-child) {
+  padding-left: 8px;
+}
+.footer-links > li:not(:first-child)::before {
+  content: '❘';
+  margin-right: 8px;
+  text-decoration: none;
+}
+
+
