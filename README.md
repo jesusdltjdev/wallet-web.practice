@@ -1,2 +1,6 @@
-"# Wallet Landing - Pr ctica HTML/CSS" 
-"P gina est tica para promocionar carteras. Proyecto de aprendizaje front-end." 
+"# Wallet Landing - Practice Project" 
+"" 
+"Static promotional page for wallets. Built with plain HTML and CSS." 
+"" 
+"- Purpose: Front-end practice (layout, semantics, responsive basics)" 
+"- Status: Personal learning project -- not for production" 
