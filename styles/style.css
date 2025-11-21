@@ -74,7 +74,7 @@ body{
 
 .header{
     padding: 10px;
-    background-image: url(/images/background.png);
+    background-image: url(/images/Background.png);
     background-color: var(--bg);
     border-radius: var(--radius);
     box-shadow: inset 0 1px 0 0 var(--highlight), var(--shadow);
@@ -111,6 +111,7 @@ body{
     color: var(--text);
     border: var(--border-card);  
     background-color: rgba(230, 230, 230, 0.3); 
+
 }
 
 .login:hover{
@@ -122,34 +123,66 @@ body{
     display: none;
 }
 
-.login-label{ 
-    text-align: center;
-    margin: 0;
-    font-size: xx-large;
-    padding:5px;
-}
-
 .formulary{
     position: absolute;
     border: solid;
     top: 7em;
     right: 0.8em;
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 20px;
+    margin-right: var(--margin-s);
+    border-radius: var(--radius);
+    box-shadow: inset 0 2px 0 0 var(--highlight), var(--shadow);
+    width: 6rem;
+    color: var(--text);
+    border: var(--border-card);  
+    background-color: rgba(230, 230, 230, 0.4); 
+    backdrop-filter: blur(10px);
 }
+
+
+.login-input:checked ~ .formulary {
+    display: flex;
+    height: auto;
+}
+
+
+
+.login-label{ 
+    text-align: center;
+    margin: 0;
+    font-size: xx-large;
+    padding:5px;
+    user-select: none;
+}
+
 
 .formulary > input{
     padding: 10px;
     border-radius: var(--radius);
     box-shadow: inset 0 2px 0 0 var(--highlight), var(--shadow);
     width: 6rem;
-    color: var(--text);
     border: var(--border-card);  
     background-color: var(--bg); 
     font-size: large;
 }
+
+.formulary > button{
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: var(--radius);
+    box-shadow: inset 0 2px 0 0 var(--highlight), var(--shadow);
+    
+    color: #757575;
+    border: var(--border-card);  
+    background-color: var(--bg); 
+    font-size: large;
+}
+
+
 
 .formulary > input:first-child{
     margin-bottom: 10px;
