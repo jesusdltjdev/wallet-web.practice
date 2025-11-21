@@ -74,11 +74,13 @@ body{
 
 .header{
     padding: 10px;
-    background-image: url(/images/background.jpg);
+    background-image: url(/images/background.png);
+    background-color: var(--bg);
     border-radius: var(--radius);
     box-shadow: inset 0 1px 0 0 var(--highlight), var(--shadow);
     border: var(--border-card);
-    background-position-x: center;
+    background-size: contain;
+    background-position: 200px;
     display: flex;
     justify-content: space-between;
     align-items: center;
